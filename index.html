@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script>
+    (function () {
+      var key = "kintrust-language";
+      var explicit = new URLSearchParams(location.search).get("lang");
+      var lang = null;
+      if (explicit === "en" || explicit === "ko") {
+        lang = explicit;
+        try { localStorage.setItem(key, lang); } catch (err) {}
+      } else {
+        try { lang = localStorage.getItem(key); } catch (err) {}
+        if (lang !== "en" && lang !== "ko") {
+          var list = navigator.languages || [navigator.language || "en"];
+          lang = "en";
+          for (var i = 0; i < list.length; i++) {
+            if (String(list[i]).toLowerCase().split("-")[0] === "ko") { lang = "ko"; break; }
+          }
+        }
+      }
+      document.documentElement.lang = lang;
+      if (lang === "ko") document.title = "Kintrust Trading Company Limited | 광물·무역·건설";
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Kintrust Trading Company Limited | Minerals, Trade &amp; Construction" data-ko="Kintrust Trading Company Limited | 광물·무역·건설">Kintrust Trading Company Limited | Minerals, Trade &amp; Construction</title>
+  <meta name="description" content="Kintrust Trading Company Limited sources minerals, coordinates trade, and develops construction and infrastructure projects." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:title" content="Kintrust Trading Company Limited | Minerals, Trade &amp; Construction" />
+  <meta property="og:description" content="Mineral sourcing, trade coordination, and construction and infrastructure work. Contact Kintrust directly." />
+  <meta property="og:site_name" content="Kintrust Trading Company Limited" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/social-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Kintrust Trading Company Limited — mineral sourcing, trade and construction." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kintrust Trading Company Limited" />
+  <meta name="twitter:description" content="Mineral sourcing, trading and development. Connecting commercial partners in Uganda and South Korea." />
+  <meta name="twitter:image" content="/images/social-card.jpg" />
+  <meta name="twitter:image:alt" content="Kintrust Trading Company Limited — mineral sourcing, trade and construction." />
+  <script id="company-schema" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "#kintrust-uganda",
+      "name": "Kintrust Trading Company Limited",
+      "legalName": "Kintrust Trading Company Limited",
+      "description": "Mineral sourcing, trade coordination, and construction and infrastructure work.",
+      "email": "kintrust@naver.com",
+      "telephone": "+256743231434",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot 7/9, Second Street, Industrial Area",
+        "addressCountry": "UG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+256743231434",
+        "email": "kintrust@naver.com",
+        "contactType": "business enquiries"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "#kintrust-korea",
+      "name": "Kintrust Company Limited",
+      "legalName": "Kintrust Company Limited",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "11 Jungheung-ro 139beon-gil, Buk-gu",
+        "addressLocality": "Pohang-si",
+        "addressCountry": "KR"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+<meta property="og:locale:alternate" content="ko_KR" data-site-seo />
+</head>
+<body>
+  <a class="skip" href="#main"><span class="en">Skip to content</span><span class="ko">본문으로 바로가기</span></a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a href="#home" class="brand brand-home" aria-label="Kintrust Trading Company Limited, home">
+        <img class="brand-logo" src="/images/kintrust-logo.png" alt="" width="394" height="386" />
+        <span class="brand-text"><strong>KINTRUST</strong><small>Trading Company Limited</small></span>
+      </a>
+      <div class="nav-actions">
+        <div class="language-switch" role="group" aria-label="Website language">
+          <a href="/?lang=en" lang="en" hreflang="en" data-language="en" aria-current="page">EN<span class="sr"> — English</span></a>
+          <span aria-hidden="true">/</span>
+          <a href="/?lang=ko" lang="ko" hreflang="ko" data-language="ko">한국어</a>
+        </div>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav aria-label="Primary" class="nav-panel" id="nav-panel">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about"><span class="en">About</span><span class="ko">회사 소개</span></a></li>
+          <li><a href="#minerals"><span class="en">Minerals &amp; Trading</span><span class="ko">광물·무역</span></a></li>
+          <li><a href="#construction"><span class="en">Construction</span><span class="ko">건설</span></a></li>
+          <li><a href="#values"><span class="en">Values</span><span class="ko">핵심 가치</span></a></li>
+          <li><a href="#verify"><span class="en">Verify</span><span class="ko">공식 정보 확인</span></a></li>
+          <li><a href="#contact" class="nav-cta"><span class="en">Contact</span><span class="ko">문의</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <picture>
+          <source type="image/webp" srcset="/images/hero-minerals-640.webp 640w, /images/hero-minerals.webp 1024w" sizes="(max-width: 960px) 100vw, 46vw" />
+          <img src="/images/hero-minerals.jpg" alt="" width="1024" height="1024" fetchpriority="high" decoding="async" />
+        </picture>
+      </div>
+      <div class="wrap hero-inner">
+        <h1 id="hero-title" class="reveal"><span class="sr en">Kintrust Trading Company Limited — </span><span class="sr ko">Kintrust Trading Company Limited — </span><span class="en">Connecting Resources.<br /><em>Building Opportunities.</em></span><span class="ko">자원을 연결하고,<br /><em>새로운 기회를 만듭니다.</em></span></h1>
+        <p class="lead reveal"><span class="en">Kintrust Trading Company Limited sources minerals, coordinates supply and trade, and carries out construction and infrastructure work for commercial partners.</span><span class="ko">Kintrust Trading Company Limited는 비즈니스 파트너를 위해 광물을 조달하고, 공급과 무역을 조율하며, 건설·인프라 사업을 수행합니다.</span></p>
+        <div class="btns reveal">
+          <a href="#minerals" class="btn btn-primary"><span class="en">Explore our business</span><span class="ko">사업 분야 살펴보기</span></a>
+          <a href="#contact" class="btn btn-ghost"><span class="en">Contact Kintrust</span><span class="ko">Kintrust에 문의하기</span></a>
+        </div>
+      </div>
+      <ul class="hero-foot wrap" aria-label="Business areas" id="hero-areas">
+        <li><a href="#minerals"><span class="en">Minerals</span><span class="ko">광물</span></a></li>
+        <li><a href="#minerals"><span class="en">Trade facilitation</span><span class="ko">무역 지원</span></a></li>
+        <li><a href="#construction"><span class="en">Construction</span><span class="ko">건설</span></a></li>
+        <li><a href="#about"><span class="en">Partnerships</span><span class="ko">파트너십</span></a></li>
+      </ul>
+    </section>
+
+    <section class="notice" id="verify" aria-labelledby="notice-title">
+      <div class="wrap notice-inner">
+        <div class="notice-head">
+          <div class="seal" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+          </div>
+          <div>
+            <p class="kicker"><span class="en">Company verification</span><span class="ko">공식 회사 정보 확인</span></p>
+            <h2 id="notice-title"><span class="en">Official Company Notice</span><span class="ko">회사 공식 안내</span></h2>
+          </div>
+        </div>
+        <div class="notice-body">
+          <p class="notice-text"><span class="en"><strong>OFFICIAL COMPANY NOTICE:</strong> Kintrust Trading Company Limited has identified an online website using our company name and identity without authorization. Visitors, prospective partners and clients are encouraged to verify all business communications and transactions through the official contact details published on this website. Please exercise caution when dealing with websites or individuals claiming to represent Kintrust.</span><span class="ko"><strong>회사 공식 안내:</strong> Kintrust Trading Company Limited는 당사의 이름과 회사 정보를 허가 없이 사용하는 웹사이트를 확인하였습니다. 방문자, 잠재 파트너 및 고객 여러분께서는 본 웹사이트에 게시된 공식 연락처를 통해 모든 업무 연락과 거래의 진위를 확인해 주시기 바랍니다. Kintrust를 대표한다고 주장하는 웹사이트나 개인과 연락하거나 거래할 때 각별히 주의해 주십시오.</span></p>
+          <ul class="verify-steps">
+            <li><div><h3><span class="en">Check the contact</span><span class="ko">공식 연락처 확인</span></h3><p><span class="en">Official phone and WhatsApp:</span><span class="ko">공식 전화 및 WhatsApp:</span> <a href="tel:+256743231434" data-cfg="phonePrimary">+256 743 231 434</a>. <span class="en">Email:</span><span class="ko">이메일:</span> <a href="mailto:kintrust@naver.com" data-cfg="email">kintrust@naver.com</a>.</p></div></li>
+            <li><div><h3><span class="en">Confirm by phone</span><span class="ko">전화로 진위 확인</span></h3><p><span class="en">Before sending documents, samples or payment, call the number above to confirm the request is genuine.</span><span class="ko">서류나 샘플을 보내거나 대금을 지급하기 전에 위 번호로 전화하여 요청이 실제 회사의 요청인지 확인해 주세요.</span></p></div></li>
+            <li><div><h3><span class="en">Match the addresses</span><span class="ko">등록 주소 대조</span></h3><p><span class="en">Our registered addresses are in Industrial Area, Uganda and Buk-gu, Pohang-si, South Korea, as listed on this page.</span><span class="ko">당사의 등록 주소는 이 페이지에 기재된 우간다 Industrial Area 및 대한민국 포항시 북구의 주소입니다.</span></p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="wrap grid-2">
+        <div>
+          <p class="kicker reveal"><span class="en">About Us</span><span class="ko">회사 소개</span></p>
+          <h2 class="h2 reveal" id="about-title"><span class="en">Mineral sourcing, trade and <em>construction.</em></span><span class="ko">광물 조달, 무역, <em>그리고 건설.</em></span></h2>
+        </div>
+        <div class="about-body">
+          <p class="reveal"><span class="en">Kintrust Trading Company Limited sources minerals, coordinates supply and trade, and takes on construction and infrastructure work.</span><span class="ko">Kintrust Trading Company Limited는 광물을 조달하고, 공급과 무역을 조율하며, 건설·인프라 사업을 수행합니다.</span></p>
+          <p class="reveal"><span class="en">Each engagement is handled with clear communication, terms agreed in writing, and partnerships built to last beyond a single transaction.</span><span class="ko">모든 업무는 명확한 소통, 서면으로 합의된 조건, 단일 거래를 넘는 파트너십을 기준으로 진행합니다.</span></p>
+        </div>
+      </div>
+      <div class="wrap activities">
+        <ul>
+          <li class="reveal"><span class="en">Mineral sourcing and trading</span><span class="ko">광물 조달 및 무역</span></li>
+          <li class="reveal"><span class="en">Mineral supply and trade facilitation</span><span class="ko">광물 공급 및 무역 지원</span></li>
+          <li class="reveal"><span class="en">Construction and infrastructure development</span><span class="ko">건설 및 인프라 개발</span></li>
+          <li class="reveal"><span class="en">Commercial partnerships</span><span class="ko">상업적 파트너십</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section minerals" id="minerals" aria-labelledby="minerals-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="kicker light reveal"><span class="en">Minerals &amp; Trading</span><span class="ko">광물·무역</span></p>
+          <h2 class="h2 reveal" id="minerals-title"><span class="en">Sourcing, supply and <em>commercial coordination.</em></span><span class="ko">조달과 공급, <em>그리고 거래 조율.</em></span></h2>
+          <p class="sub reveal"><span class="en">We connect buyers and suppliers, coordinate the commercial steps between them, and support trade through clear documentation and communication.</span><span class="ko">구매자와 공급업체를 연결하고 거래 절차를 조율하며, 명확한 문서와 소통을 통해 무역 업무를 지원합니다.</span></p>
+        </div>
+        <div class="min-grid">
+          <figure class="min-photo reveal">
+            <picture>
+              <source type="image/webp" srcset="/images/mineral-samples-640.webp 640w, /images/mineral-samples.webp 1024w" sizes="(max-width: 960px) 100vw, 45vw" />
+              <img src="/images/mineral-samples.jpg" alt="Assorted mineral rock samples arranged in a tray. 트레이에 놓인 여러 종류의 광물 샘플" width="1024" height="1024" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption><span class="en">Illustrative image — mineral samples</span><span class="ko">참고 이미지 — 광물 샘플</span></figcaption>
+          </figure>
+          <div class="min-list">
+            <article class="mcard reveal"><h3><span class="en">Mineral Sourcing</span><span class="ko">광물 조달</span></h3><p><span class="en">Identifying supply opportunities and engaging with suppliers on behalf of commercial partners, with attention to responsible practice.</span><span class="ko">책임 있는 업무 수행을 바탕으로 공급 기회를 파악하고, 비즈니스 파트너를 대신하여 공급업체와 협의합니다.</span></p></article>
+            <article class="mcard reveal"><h3><span class="en">Mineral Trading</span><span class="ko">광물 무역</span></h3><p><span class="en">Structuring trade relationships between buyers, suppliers and commercial partners.</span><span class="ko">구매자, 공급업체 및 비즈니스 파트너 간 무역 관계를 구축합니다.</span></p></article>
+            <article class="mcard reveal"><h3><span class="en">Supply</span><span class="ko">공급</span></h3><p><span class="en">Coordinating the supply of materials to meet partner requirements and agreed specifications.</span><span class="ko">파트너의 요구 사항과 합의된 규격에 맞춰 자재 공급을 조율합니다.</span></p></article>
+            <article class="mcard reveal"><h3><span class="en">Trade Facilitation</span><span class="ko">무역 지원</span></h3><p><span class="en">Supporting communication, documentation and commercial coordination across borders.</span><span class="ko">국가 간 소통, 문서 업무 및 거래 조율을 지원합니다.</span></p></article>
+          </div>
+        </div>
+        <div class="process reveal">
+          <p class="kicker light"><span class="en">How an engagement works</span><span class="ko">업무 진행 절차</span></p>
+          <ol>
+            <li><strong><span class="en">Enquiry</span><span class="ko">문의</span></strong> <span class="en">Requirements discussed through official contacts.</span><span class="ko">공식 연락처를 통해 요구 사항을 협의합니다.</span></li>
+            <li><strong><span class="en">Specification</span><span class="ko">조건 확인</span></strong> <span class="en">Material, quantity and terms agreed in writing.</span><span class="ko">자재, 수량 및 거래 조건을 서면으로 합의합니다.</span></li>
+            <li><strong><span class="en">Coordination</span><span class="ko">업무 조율</span></strong> <span class="en">Supplier, documentation and logistics aligned.</span><span class="ko">공급업체, 관련 서류 및 물류 업무를 조율합니다.</span></li>
+            <li><strong><span class="en">Follow-through</span><span class="ko">후속 관리</span></strong> <span class="en">Clear communication until completion.</span><span class="ko">업무 완료 시까지 명확한 소통을 이어갑니다.</span></li>
+          </ol>
+        </div>
+        <figure class="wide-photo reveal">
+          <picture>
+            <source type="image/webp" srcset="/images/port-640.webp 640w, /images/port.webp 1024w" sizes="(max-width: 1240px) 100vw, 1200px" />
+            <img src="/images/port.jpg" alt="Container port with cargo ship and cranes at dusk. 해 질 무렵 화물선과 크레인이 있는 컨테이너 항구" width="1024" height="1024" loading="lazy" decoding="async" />
+          </picture>
+          <figcaption><span class="en">Illustrative image — international commodity logistics</span><span class="ko">참고 이미지 — 국제 원자재 물류</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section construction" id="construction" aria-labelledby="construction-title">
+      <div class="wrap grid-2 con-top">
+        <figure class="con-photo reveal">
+          <picture>
+            <source type="image/webp" srcset="/images/construction-640.webp 640w, /images/construction.webp 1024w" sizes="(max-width: 960px) 100vw, 50vw" />
+            <img src="/images/construction.jpg" alt="Commercial building under construction with cranes. 크레인을 이용해 건설 중인 상업용 건물" width="1024" height="1024" loading="lazy" decoding="async" />
+          </picture>
+          <figcaption><span class="en">Illustrative image — not a Kintrust project</span><span class="ko">참고 이미지 — Kintrust의 실제 프로젝트가 아닙니다</span></figcaption>
+        </figure>
+        <div>
+          <p class="kicker reveal"><span class="en">Construction &amp; Development</span><span class="ko">건설·개발</span></p>
+          <h2 class="h2 reveal" id="construction-title"><span class="en">Building for <em>the future.</em></span><span class="ko">미래를 위한 <em>건설.</em></span></h2>
+          <p class="reveal"><span class="en">Kintrust is growing a construction and development portfolio in Uganda, covering commercial construction, buildings and infrastructure. We are committed to quality, safe practice and work that serves communities for the long term.</span><span class="ko">Kintrust는 우간다에서 상업용 건축, 건물 및 인프라를 아우르는 건설·개발 사업을 확대하고 있습니다. 품질과 안전한 업무 수행을 중시하며, 지역사회에 장기적으로 도움이 되는 사업을 지향합니다.</span></p>
+          <ul class="ticks reveal">
+            <li><span class="en">Commercial construction</span><span class="ko">상업용 건축</span></li><li><span class="en">Infrastructure development</span><span class="ko">인프라 개발</span></li><li><span class="en">Buildings and development</span><span class="ko">건축 및 개발</span></li>
+          </ul>
+          <p class="status-chip reveal"><span aria-hidden="true"></span><span class="en">Expanding area of business</span><span class="ko">확대 중인 사업 분야</span></p>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="pf-head reveal"><h3><span class="en">Project Portfolio</span><span class="ko">프로젝트 소개</span></h3><span><span class="en">Updates will be published here once available</span><span class="ko">공개 가능한 정보가 준비되면 이곳에 게시합니다</span></span></div>
+        <div class="pf-grid">
+          <div class="pf reveal"><span class="pf-tag"><span class="en">Commercial</span><span class="ko">상업 시설</span></span><p><span class="en">Project portfolio updates coming soon</span><span class="ko">프로젝트 관련 소식은 추후 공개됩니다</span></p></div>
+          <div class="pf reveal"><span class="pf-tag"><span class="en">Infrastructure</span><span class="ko">인프라</span></span><p><span class="en">Project portfolio updates coming soon</span><span class="ko">프로젝트 관련 소식은 추후 공개됩니다</span></p></div>
+          <div class="pf reveal"><span class="pf-tag"><span class="en">Development</span><span class="ko">개발</span></span><p><span class="en">Project portfolio updates coming soon</span><span class="ko">프로젝트 관련 소식은 추후 공개됩니다</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section values" id="values" aria-labelledby="values-title">
+      <div class="wrap">
+        <p class="kicker reveal"><span class="en">Our Values</span><span class="ko">핵심 가치</span></p>
+        <h2 class="h2 reveal" id="values-title"><span class="en">What partners can <em>expect from us.</em></span><span class="ko">파트너에게 드리는 <em>약속.</em></span></h2>
+        <div class="val-grid">
+          <div class="val reveal"><h3><span class="en">Transparency</span><span class="ko">투명성</span></h3><p><span class="en">Clear terms, verifiable contacts and honest communication.</span><span class="ko">명확한 조건, 확인 가능한 연락처, 정직한 소통을 지향합니다.</span></p></div>
+          <div class="val reveal"><h3><span class="en">Professionalism</span><span class="ko">전문성</span></h3><p><span class="en">Disciplined, documented and responsive in every engagement.</span><span class="ko">모든 업무를 체계적으로 기록하고 신속하게 대응합니다.</span></p></div>
+          <div class="val reveal"><h3><span class="en">Responsible business</span><span class="ko">책임 있는 경영</span></h3><p><span class="en">Conduct that respects people, communities and the law.</span><span class="ko">사람과 지역사회, 법규를 존중하며 업무를 수행합니다.</span></p></div>
+          <div class="val reveal"><h3><span class="en">Long-term partnerships</span><span class="ko">장기적인 파트너십</span></h3><p><span class="en">Relationships designed to outlast a single deal.</span><span class="ko">단일 거래를 넘어 지속되는 관계를 추구합니다.</span></p></div>
+          <div class="val reveal"><h3><span class="en">Growth and development</span><span class="ko">성장과 발전</span></h3><p><span class="en">Contributing to sustained progress in Uganda and beyond.</span><span class="ko">우간다를 비롯한 여러 지역의 지속적인 발전에 기여하고자 합니다.</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div>
+          <p class="kicker light reveal"><span class="en">Contact</span><span class="ko">문의</span></p>
+          <h2 class="h2 reveal" id="contact-title"><span class="en">Speak to <em>Kintrust directly.</em></span><span class="ko">Kintrust에 <em>직접 문의하세요.</em></span></h2>
+          <p class="sub reveal"><span class="en">Please use only the contact details published on this page to verify any communication claiming to represent Kintrust.</span><span class="ko">Kintrust를 대표한다고 주장하는 연락을 받으신 경우, 반드시 이 페이지에 게시된 공식 연락처로 진위를 확인해 주세요.</span></p>
+          <address class="reveal">
+            <dl class="cinfo">
+              <div><dt><span class="en">Company</span><span class="ko">회사명</span></dt><dd>Kintrust Trading Company Limited</dd></div>
+              <div><dt><span class="en">Uganda office</span><span class="ko">우간다 사무소</span></dt><dd data-cfg="addressUg">Plot 7/9, Second Street, Industrial Area, Uganda</dd></div>
+              <div><dt><span class="en">Phone / WhatsApp</span><span class="ko">전화 / WhatsApp</span></dt><dd><a data-cfg="phonePrimary" href="tel:+256743231434">+256 743 231 434</a></dd></div>
+              <div><dt><span class="en">South Korea registered address</span><span class="ko">대한민국 등록 주소</span></dt><dd>Kintrust Company Limited<br /><span data-cfg="addressKr">11 Jungheung-ro 139beon-gil, Buk-gu, Pohang-si, South Korea</span></dd></div>
+              <div><dt><span class="en">Email</span><span class="ko">이메일</span></dt><dd><a data-cfg="email" href="mailto:kintrust@naver.com">kintrust@naver.com</a></dd></div>
+            </dl>
+          </address>
+          <div class="btns reveal">
+            <a class="btn btn-primary" data-cfg="callBtn" href="tel:+256743231434"><span class="en">Call Uganda office</span><span class="ko">우간다 사무소에 전화하기</span></a>
+            <a class="btn btn-ghost" data-cfg="waBtn" href="https://wa.me/256743231434" target="_blank" rel="noopener">WhatsApp<span class="sr en"> (opens in a new tab)</span><span class="sr ko"> (새 탭에서 열림)</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <nav id="footer-nav" aria-label="Footer">
+        <ul class="foot-links">
+          <li><a href="#about"><span class="en">About</span><span class="ko">회사 소개</span></a></li>
+          <li><a href="#minerals"><span class="en">Minerals &amp; Trading</span><span class="ko">광물·무역</span></a></li>
+          <li><a href="#construction"><span class="en">Construction</span><span class="ko">건설</span></a></li>
+          <li><a href="#values"><span class="en">Values</span><span class="ko">핵심 가치</span></a></li>
+          <li><a href="#verify"><span class="en">Verify</span><span class="ko">공식 정보 확인</span></a></li>
+          <li><a href="#contact"><span class="en">Contact</span><span class="ko">문의</span></a></li>
+        </ul>
+      </nav>
+      <div class="foot-legal">
+        <p><strong>Kintrust Trading Company Limited</strong> <span class="sep" aria-hidden="true">·</span> Plot 7/9, Second Street, Industrial Area, Uganda</p>
+        <p><strong>Kintrust Company Limited</strong> <span class="sep" aria-hidden="true">·</span> <span data-cfg="addressKr">11 Jungheung-ro 139beon-gil, Buk-gu, Pohang-si, South Korea</span></p>
+        <p>
+          <span class="en">Tel</span><span class="ko">전화</span> <a data-cfg="phonePrimary" href="tel:+256743231434">+256 743 231 434</a>
+          <span class="sep" aria-hidden="true">·</span>
+          <span class="en">Email</span><span class="ko">이메일</span> <a data-cfg="email" href="mailto:kintrust@naver.com">kintrust@naver.com</a>
+          <span class="sep" aria-hidden="true">·</span>
+          <a data-cfg="waBtn" href="https://wa.me/256743231434" target="_blank" rel="noopener">WhatsApp<span class="sr en"> (opens in a new tab)</span><span class="sr ko"> (새 탭에서 열림)</span></a>
+        </p>
+      </div>
+      <p class="foot-copy">&copy; <span id="year">2026</span> Kintrust Trading Company Limited <span class="en">All rights reserved. Only contact details published on this site are official. Photography is illustrative.</span><span class="ko">모든 권리 보유. 본 사이트에 게시된 연락처만 공식 연락처입니다. 사진은 이해를 돕기 위한 참고 이미지입니다.</span></p>
+    </div>
+  </footer>
+
+<script src="/site.js"></script></body>
+
+</html>
